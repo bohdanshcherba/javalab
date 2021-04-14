@@ -1,34 +1,37 @@
 package javalab.lab7;
 
 public class ChristmasTree {
-    public int height = 0;
-    public String producer = "";
-    public float price = 0;
-    public String material = "";
+    public int height;
+    public String producer;
+    public double price;
+    public String material;
 
-    private String color = "";
-    private int dateMade = 0;
-    private String width = "";
-    private String style = "";
-    private String treeFamily = "";
+    private String color;
+    private int dateMade;
+    private String width;
+    private String style;
+    private String treeFamily;
 
     private static final int staticDate = 29;
 
-    protected int discount = 0;
-    protected String lightBulbType = "";
+    protected int discount;
+    protected String lightBulbType;
 
 
-    public ChristmasTree(int height, String producer, float price, String material) {
+    public ChristmasTree(int height, String producer, double price, String material) {
         this.height = height;
         this.producer = producer;
         this.price = price;
         this.material = material;
     }
 
-    public ChristmasTree(int height, String producer, float price, String material, String color,
+    public ChristmasTree(int height, String producer, double price, String material, String color,
                          int dateMade, String width, String style, String treeFamily,
                          int discount, String lightBulbType) {
-        new ChristmasTree(height,producer,price,material);
+        this.height = height;
+        this.producer = producer;
+        this.price = price;
+        this.material = material;
         this.color = color;
         this.dateMade = dateMade;
         this.width = width;
@@ -66,11 +69,11 @@ public class ChristmasTree {
                 staticDate + " November");
     }
 
-    public void resetValues(int height, String producer, float price, String material,
+    public void resetValues(int height, String producer, double price, String material,
                             String color, int dateMade, String width, String style,
                             String treeFamily, int discount, String lightBulbType) {
-        new ChristmasTree(height,producer,price,material, color, dateMade, width,
-                style, treeFamily, discount, lightBulbType );
+        new ChristmasTree(height, producer, price, material, color, dateMade, width,
+                style, treeFamily, discount, lightBulbType);
     }
 
 

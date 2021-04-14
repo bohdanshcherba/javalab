@@ -1,19 +1,15 @@
 package javalab.lab7;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
         System.out.print("\n PRINT STATIC METHOD PUT UP \n");
         ChristmasTree.printStaticPutUP();
-
-
 
         ChristmasTree newYearTree = new ChristmasTree(180, "Chine", 122, "Plastic");
 
         ChristmasTree oldNewYearTree = new ChristmasTree(180, "Chine", 122, "Plastic",
                 "white", 2021, "102cm", "Contemporary",
                 "Palm", 12, "LED");
-
-
 
         System.out.print("\n PRINT New Year Tree  \n");
         System.out.println(newYearTree);
@@ -30,8 +26,5 @@ public class Main {
                 "Palm", 10, "LED");
 
         System.out.println(oldNewYearTree);
-
     }
-
-
 }
