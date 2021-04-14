@@ -72,8 +72,17 @@ public class ChristmasTree {
     public void resetValues(int height, String producer, double price, String material,
                             String color, int dateMade, String width, String style,
                             String treeFamily, int discount, String lightBulbType) {
-        new ChristmasTree(height, producer, price, material, color, dateMade, width,
-                style, treeFamily, discount, lightBulbType);
+        this.height = height;
+        this.producer = producer;
+        this.price = price;
+        this.material = material;
+        this.color = color;
+        this.dateMade = dateMade;
+        this.width = width;
+        this.style = style;
+        this.treeFamily = treeFamily;
+        this.discount = discount;
+        this.lightBulbType = lightBulbType;
     }
 
 
